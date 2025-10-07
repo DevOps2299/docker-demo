@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: my-nginx-container_name
+    ports:
+      - "8080:80"
+    restart: unless-stopped
